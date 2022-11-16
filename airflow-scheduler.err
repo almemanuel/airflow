@@ -1,0 +1,11 @@
+[2022-11-16 14:34:35 -0300] [9815] [INFO] Starting gunicorn 20.1.0
+[2022-11-16 14:34:35 -0300] [9815] [INFO] Listening at: http://[::]:8793 (9815)
+[2022-11-16 14:34:35 -0300] [9815] [INFO] Using worker: sync
+[2022-11-16 14:34:35 -0300] [9816] [INFO] Booting worker with pid: 9816
+[2022-11-16 14:34:35 -0300] [9819] [INFO] Booting worker with pid: 9819
+[2022-11-16 15:10:08 -0300] [9815] [CRITICAL] WORKER TIMEOUT (pid:9816)
+[2022-11-16 15:10:08 -0300] [9815] [CRITICAL] WORKER TIMEOUT (pid:9819)
+[2022-11-16 15:10:08 -0300] [9819] [INFO] Worker exiting (pid: 9819)
+[2022-11-16 15:10:08 -0300] [9815] [WARNING] Worker with pid 9816 was terminated due to signal 9
+[2022-11-16 15:10:08 -0300] [11447] [INFO] Booting worker with pid: 11447
+[2022-11-16 15:10:09 -0300] [11448] [INFO] Booting worker with pid: 11448

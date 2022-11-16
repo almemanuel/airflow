@@ -1,0 +1,91 @@
+2022-11-16 14:34:35,335 INFO - Starting the scheduler
+2022-11-16 14:34:35,336 INFO - Processing each file at most -1 times
+2022-11-16 14:34:35,337 INFO - Loaded executor: SequentialExecutor
+2022-11-16 14:34:35,340 INFO - Launched DagFileProcessorManager with pid: 9817
+2022-11-16 14:34:35,341 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 14:34:35,343 INFO - Configured default timezone Timezone('UTC')
+2022-11-16 14:39:35,544 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 14:44:35,610 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 14:49:35,784 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 14:54:35,950 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 14:59:36,248 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:10:43,252 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:15:43,400 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:20:43,646 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:22:27,573 INFO - Setting next_dagrun for tutorial to 2022-11-16T18:22:11.450432+00:00, run_after=2022-11-17T18:22:11.450432+00:00
+2022-11-16 15:22:27,621 INFO - Marking run <DagRun tutorial @ 2022-11-15 18:22:11.450432+00:00: scheduled__2022-11-15T18:22:11.450432+00:00, state:running, queued_at: 2022-11-16 18:22:27.564337+00:00. externally triggered: False> successful
+2022-11-16 15:22:27,623 INFO - DagRun Finished: dag_id=tutorial, execution_date=2022-11-15 18:22:11.450432+00:00, run_id=scheduled__2022-11-15T18:22:11.450432+00:00, run_start_date=2022-11-16 18:22:27.590287+00:00, run_end_date=2022-11-16 18:22:27.623204+00:00, run_duration=0.032917, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-11-15 18:22:11.450432+00:00, data_interval_end=2022-11-16 18:22:11.450432+00:00, dag_hash=d8e3f444be770dca34929116d8f1a522
+2022-11-16 15:22:27,625 INFO - Setting next_dagrun for tutorial to 2022-11-16T18:22:11.450432+00:00, run_after=2022-11-17T18:22:11.450432+00:00
+2022-11-16 15:22:27,656 INFO - 1 tasks up for execution:
+	<TaskInstance: tutorial.print_date manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+2022-11-16 15:22:27,656 INFO - DAG tutorial has 0/16 running and queued tasks
+2022-11-16 15:22:27,656 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+2022-11-16 15:22:27,658 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='manual__2022-11-16T18:22:26.684389+00:00', try_number=1, map_index=-1) to executor with priority 4 and queue default
+2022-11-16 15:22:27,658 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:27,665 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:29,760 INFO - Executor reports execution of tutorial.print_date run_id=manual__2022-11-16T18:22:26.684389+00:00 exited with status success for try_number 1
+2022-11-16 15:22:29,809 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date, run_id=manual__2022-11-16T18:22:26.684389+00:00, map_index=-1, run_start_date=2022-11-16 18:22:29.257146+00:00, run_end_date=2022-11-16 18:22:29.489815+00:00, run_duration=0.232669, state=success, executor_state=success, try_number=1, max_tries=1, job_id=3, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2022-11-16 18:22:27.656671+00:00, queued_by_job_id=2, pid=12104
+2022-11-16 15:22:29,960 INFO - 2 tasks up for execution:
+	<TaskInstance: tutorial.sleep manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+2022-11-16 15:22:29,960 INFO - DAG tutorial has 0/16 running and queued tasks
+2022-11-16 15:22:29,960 INFO - DAG tutorial has 1/16 running and queued tasks
+2022-11-16 15:22:29,960 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.sleep manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated manual__2022-11-16T18:22:26.684389+00:00 [scheduled]>
+2022-11-16 15:22:29,962 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='manual__2022-11-16T18:22:26.684389+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-11-16 15:22:29,962 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:29,962 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='manual__2022-11-16T18:22:26.684389+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-11-16 15:22:29,962 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:29,968 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:36,041 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'manual__2022-11-16T18:22:26.684389+00:00', '--local', '--subdir', '/home/emanuel/.local/share/virtualenvs/apache-airflow-EbdR2nYd/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2022-11-16 15:22:37,152 INFO - Executor reports execution of tutorial.sleep run_id=manual__2022-11-16T18:22:26.684389+00:00 exited with status success for try_number 1
+2022-11-16 15:22:37,153 INFO - Executor reports execution of tutorial.templated run_id=manual__2022-11-16T18:22:26.684389+00:00 exited with status success for try_number 1
+2022-11-16 15:22:37,158 INFO - TaskInstance Finished: dag_id=tutorial, task_id=sleep, run_id=manual__2022-11-16T18:22:26.684389+00:00, map_index=-1, run_start_date=2022-11-16 18:22:30.676281+00:00, run_end_date=2022-11-16 18:22:35.827119+00:00, run_duration=5.150838, state=success, executor_state=success, try_number=1, max_tries=3, job_id=4, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2022-11-16 18:22:29.961107+00:00, queued_by_job_id=2, pid=12109
+2022-11-16 15:22:37,159 INFO - TaskInstance Finished: dag_id=tutorial, task_id=templated, run_id=manual__2022-11-16T18:22:26.684389+00:00, map_index=-1, run_start_date=2022-11-16 18:22:36.816695+00:00, run_end_date=2022-11-16 18:22:36.957132+00:00, run_duration=0.140437, state=success, executor_state=success, try_number=1, max_tries=1, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2022-11-16 18:22:29.961107+00:00, queued_by_job_id=2, pid=12114
+2022-11-16 15:22:37,314 INFO - Marking run <DagRun tutorial @ 2022-11-16 18:22:26.684389+00:00: manual__2022-11-16T18:22:26.684389+00:00, state:running, queued_at: 2022-11-16 18:22:26.746427+00:00. externally triggered: True> successful
+2022-11-16 15:22:37,315 INFO - DagRun Finished: dag_id=tutorial, execution_date=2022-11-16 18:22:26.684389+00:00, run_id=manual__2022-11-16T18:22:26.684389+00:00, run_start_date=2022-11-16 18:22:27.590647+00:00, run_end_date=2022-11-16 18:22:37.315259+00:00, run_duration=9.724612, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-11-15 18:22:26.684389+00:00, data_interval_end=2022-11-16 18:22:26.684389+00:00, dag_hash=d8e3f444be770dca34929116d8f1a522
+2022-11-16 15:22:37,317 INFO - Setting next_dagrun for tutorial to 2022-11-16T18:22:26.684389+00:00, run_after=2022-11-17T18:22:26.684389+00:00
+2022-11-16 15:25:43,792 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:30:44,050 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:35:44,196 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:40:44,588 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:45:44,950 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:50:45,131 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:55:45,519 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 15:56:54,322 INFO - 1 tasks up for execution:
+	<TaskInstance: fluxo_simples.print_date manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:56:54,322 INFO - DAG fluxo_simples has 0/16 running and queued tasks
+2022-11-16 15:56:54,322 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fluxo_simples.print_date manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:56:54,329 INFO - Sending TaskInstanceKey(dag_id='fluxo_simples', task_id='print_date', run_id='manual__2022-11-16T18:56:53.823627+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2022-11-16 15:56:54,329 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fluxo_simples', 'print_date', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:56:54,336 INFO - Executing command: ['airflow', 'tasks', 'run', 'fluxo_simples', 'print_date', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:56:58,361 INFO - Executor reports execution of fluxo_simples.print_date run_id=manual__2022-11-16T18:56:53.823627+00:00 exited with status success for try_number 1
+2022-11-16 15:56:58,378 INFO - TaskInstance Finished: dag_id=fluxo_simples, task_id=print_date, run_id=manual__2022-11-16T18:56:53.823627+00:00, map_index=-1, run_start_date=2022-11-16 18:56:57.785783+00:00, run_end_date=2022-11-16 18:56:58.042153+00:00, run_duration=0.25637, state=success, executor_state=success, try_number=1, max_tries=0, job_id=10, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2022-11-16 18:56:54.323276+00:00, queued_by_job_id=2, pid=15219
+2022-11-16 15:56:58,668 INFO - 1 tasks up for execution:
+	<TaskInstance: fluxo_simples.sleep manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:56:58,669 INFO - DAG fluxo_simples has 0/16 running and queued tasks
+2022-11-16 15:56:58,669 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fluxo_simples.sleep manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:56:58,670 INFO - Sending TaskInstanceKey(dag_id='fluxo_simples', task_id='sleep', run_id='manual__2022-11-16T18:56:53.823627+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-11-16 15:56:58,670 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fluxo_simples', 'sleep', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:56:58,675 INFO - Executing command: ['airflow', 'tasks', 'run', 'fluxo_simples', 'sleep', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:57:05,199 INFO - Executor reports execution of fluxo_simples.sleep run_id=manual__2022-11-16T18:56:53.823627+00:00 exited with status success for try_number 1
+2022-11-16 15:57:05,207 INFO - TaskInstance Finished: dag_id=fluxo_simples, task_id=sleep, run_id=manual__2022-11-16T18:56:53.823627+00:00, map_index=-1, run_start_date=2022-11-16 18:56:59.640038+00:00, run_end_date=2022-11-16 18:57:04.945590+00:00, run_duration=5.305552, state=success, executor_state=success, try_number=1, max_tries=3, job_id=11, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2022-11-16 18:56:58.669546+00:00, queued_by_job_id=2, pid=15224
+2022-11-16 15:57:05,499 INFO - 1 tasks up for execution:
+	<TaskInstance: fluxo_simples.save_date manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:57:05,499 INFO - DAG fluxo_simples has 0/16 running and queued tasks
+2022-11-16 15:57:05,499 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fluxo_simples.save_date manual__2022-11-16T18:56:53.823627+00:00 [scheduled]>
+2022-11-16 15:57:05,501 INFO - Sending TaskInstanceKey(dag_id='fluxo_simples', task_id='save_date', run_id='manual__2022-11-16T18:56:53.823627+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-11-16 15:57:05,501 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fluxo_simples', 'save_date', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:57:05,507 INFO - Executing command: ['airflow', 'tasks', 'run', 'fluxo_simples', 'save_date', 'manual__2022-11-16T18:56:53.823627+00:00', '--local', '--subdir', 'DAGS_FOLDER/first_script.py']
+2022-11-16 15:57:06,901 INFO - Executor reports execution of fluxo_simples.save_date run_id=manual__2022-11-16T18:56:53.823627+00:00 exited with status success for try_number 1
+2022-11-16 15:57:06,908 INFO - TaskInstance Finished: dag_id=fluxo_simples, task_id=save_date, run_id=manual__2022-11-16T18:56:53.823627+00:00, map_index=-1, run_start_date=2022-11-16 18:57:06.466710+00:00, run_end_date=2022-11-16 18:57:06.626342+00:00, run_duration=0.159632, state=success, executor_state=success, try_number=1, max_tries=3, job_id=12, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2022-11-16 18:57:05.499979+00:00, queued_by_job_id=2, pid=15229
+2022-11-16 15:57:07,164 INFO - Marking run <DagRun fluxo_simples @ 2022-11-16 18:56:53.823627+00:00: manual__2022-11-16T18:56:53.823627+00:00, state:running, queued_at: 2022-11-16 18:56:53.872768+00:00. externally triggered: True> successful
+2022-11-16 15:57:07,164 INFO - DagRun Finished: dag_id=fluxo_simples, execution_date=2022-11-16 18:56:53.823627+00:00, run_id=manual__2022-11-16T18:56:53.823627+00:00, run_start_date=2022-11-16 18:56:54.272743+00:00, run_end_date=2022-11-16 18:57:07.164525+00:00, run_duration=12.891782, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-11-15 18:56:53.823627+00:00, data_interval_end=2022-11-16 18:56:53.823627+00:00, dag_hash=cde2990712c81b83a8539e23774612bf
+2022-11-16 15:57:07,167 INFO - Setting next_dagrun for fluxo_simples to 2022-11-16T18:56:53.823627+00:00, run_after=2022-11-17T18:56:53.823627+00:00
+2022-11-16 16:00:45,787 INFO - Resetting orphaned tasks for active dag runs
+2022-11-16 16:05:46,054 INFO - Resetting orphaned tasks for active dag runs

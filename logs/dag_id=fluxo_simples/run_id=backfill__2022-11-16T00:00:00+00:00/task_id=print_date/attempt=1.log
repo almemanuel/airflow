@@ -1,0 +1,28 @@
+[2022-11-16T15:54:44.703-0300] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: fluxo_simples.print_date backfill__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-16T15:54:44.710-0300] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: fluxo_simples.print_date backfill__2022-11-16T00:00:00+00:00 [queued]>
+[2022-11-16T15:54:44.710-0300] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T15:54:44.710-0300] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-16T15:54:44.710-0300] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T15:54:44.727-0300] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): print_date> on 2022-11-16 00:00:00+00:00
+[2022-11-16T15:54:44.730-0300] {standard_task_runner.py:55} INFO - Started process 15086 to run task
+[2022-11-16T15:54:44.734-0300] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'fluxo_simples', 'print_date', 'backfill__2022-11-16T00:00:00+00:00', '--job-id', '7', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/first_script.py', '--cfg-path', '/tmp/tmpxcgpgbnq']
+[2022-11-16T15:54:44.735-0300] {standard_task_runner.py:83} INFO - Job 7: Subtask print_date
+[2022-11-16T15:54:44.790-0300] {task_command.py:376} INFO - Running <TaskInstance: fluxo_simples.print_date backfill__2022-11-16T00:00:00+00:00 [running]> on host PGON_GAR_TI11.princesadoscampos.local
+[2022-11-16T15:54:44.854-0300] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=fluxo_simples
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=backfill__2022-11-16T00:00:00+00:00
+[2022-11-16T15:54:44.855-0300] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-16T15:54:44.855-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'date']
+[2022-11-16T15:54:44.860-0300] {subprocess.py:86} INFO - Output:
+[2022-11-16T15:54:44.861-0300] {subprocess.py:93} INFO - Wed Nov 16 15:54:44 -03 2022
+[2022-11-16T15:54:44.863-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-16T15:54:44.884-0300] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=fluxo_simples, task_id=print_date, execution_date=20221116T000000, start_date=20221116T185444, end_date=20221116T185444
+[2022-11-16T15:54:44.905-0300] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-11-16T15:54:44.928-0300] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check
